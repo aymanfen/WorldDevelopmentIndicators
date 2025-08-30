@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: raw             # schema in Snowflake (where raw data lives)
+    schema: WDI      # schema inside Snowflake
+    tables:
+      - name: KAFKADATA   # Snowflake table name

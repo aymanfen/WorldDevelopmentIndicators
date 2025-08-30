@@ -1,0 +1,14 @@
+{
+  "name": "snowflake-sink",
+  "config": {
+    "connector.class": "com.snowflake.kafka.connector.SnowflakeSinkConnector",
+    "tasks.max": "1",
+    "topics": "TestTopic",
+    "snowflake.url.name": "rwrbodn-ap70638.snowflakecomputing.com",
+    "snowflake.user.name": "AYMANFEN",
+    "snowflake.private.key": "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDExqQBoIgt5rF6uUT0h1Ajb+VQBHWgsy/YRNPQjacZdZ7DC3rqXF/Q6dQGBegD5D9p8IA0e6lhvYejhpFHZi+67ilYMLqpNox+mCVrO9z4M2iX1jGSoFjZQcaKDgcYrffcJyr1qfbyB7Jjg50RJKIDvY+PnfrbC4dEmoE+V3ysP9DghXCkxOYC8GVYZhz2lThJpluznCX2bGAwEcNnXGnSioj6SjFXcgXhvlgd8ivmLRe3x3n9Ld70bhQHfCWODDl4WxhS8UKDAE+x8d5MTRHEvApM0UlX1SezSCQghcm3pPLQfWWWKR2KRJaug9zawY8BkQWr7xt1OCLGssIoRU3DAgMBAAECggEAQBDyjesP2238Q9o1Rq4Vm+wPC43gJFmizrWeBw1PpdzjO1quAsbflVvEIc/jefzi3qGkhDHs9HsqQcYK3+W3zZNEF8gJxhUSCheMO00qxQ6r05+z1SrqspWVSBaIHfNqOx3vgTt8wNFbtcXAqje0niYmKxrC9XVb7aymPr9qQoQTlRUHYprWv5l6fuxRpq2UHw+HvLnNiS3e5ZDPXpLT4SvLLlel5xYIaZTQjlP0YMx26lRN3rzmoF4s1IOkPWzooHE6LzMjgaZaI0w3ArDnRwnP2A6eiR5qWPwhDJeD26B9rntCnl+90Pl+07h53xOQ9UR3TXBlRWFU6Ep/FGhxGQKBgQD47NnZzeKRzKz5qwFVhYHKynSmZH9uLlGBQKGC33N82bdlzWdHiLei6aIzio0W0O2rEeiD5t4q6/Vvy8INv1qo8TfCn5YZRiA/GTKkpDhxjLZ7mldZCATMuuoBKR+CTgV2W5uh4wKLVR9YlQsLf+6USqB8J+7V03Z1Q4Feq1gf6QKBgQDKXlusV/VMi9PzAY2vJwkctX5mUcNfzAwc4UXUQmrFV/58mSY3nAnrSQHld2Rm6n1wDsglNRsnt58V7UTCRPDT3EsLpVzqkIfWLBqdGate7Br/ppM5ALIoW/j40ORsRIcuY12y9Jl9B3Xt3+Q82mhwk1l2OwRWMPozh+QjI8QAywKBgQCZcuiYq6KP3myDPDeGUNbB/CwMpscnVMZJt13ZH4ZB4LR9vTF9l3oco4mp3C89cW4RluiO5zLtoqeaUzE86Ekq/Agzoc0Vp3UZcJ8Xf2SMGwIjD/HooFjVHCREsuUJnq8fVzmJgjd/TOoV4Ur9u8+G+roTz0ob5k+P2h1WDqo0gQKBgQDDCoZYaL3m9K1mfIzNz1Wc8d/NReiDn+ncu9HNbeXyJYkFFaYb2qxEtKy7OILwHfif099a3QA7G2Kcg33NrxxdVOiPZOVUvc/tv7w2xdLBPdYXp7glLGKJO3uOc+Zz4uhW8TYRkGWOd25VwX/8lpQqTBnhNahMWhALMmHS7FmwWQKBgQCJGUGLBQrBSKC18DM61v0pDxNLYOG5UGZ+DcVQZDAiOwWmB6U+L5VxcwDbiRcm2WUcxuuW8DJD47oUdb89JeIhanBzVCDWXvMBF6T+UMG2Ikfj7KogNNYlDjvfNRDVapltNyGmsTSTVdc27VXPQIBZOkYnToRuFqJCp6ITBSEBmQ==",
+    "snowflake.database.name": "WDI",
+    "snowflake.schema.name": "WDI",
+    "snowflake.topic2table.map": "TestTopic:KAFKADATA"
+  }
+}
