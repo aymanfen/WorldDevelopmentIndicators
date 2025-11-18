@@ -1,0 +1,126 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "c5b58d15d350a9d887c4",
+  "position": {
+    "x": 153.75,
+    "y": 11.25,
+    "z": 1001,
+    "height": 282.5,
+    "width": 550,
+    "tabOrder": 1001
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Facts"
+                    }
+                  },
+                  "Property": "YEAR"
+                }
+              },
+              "queryRef": "Facts.YEAR",
+              "nativeQueryRef": "Sum of YEAR",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Facts"
+                        }
+                      },
+                      "Property": "Stocks traded, total value (% of GDP)(current US$)"
+                    }
+                  },
+                  "Function": 6
+                }
+              },
+              "queryRef": "Sum(Facts.Stocks traded, total value (% of GDP)(current US$))",
+              "nativeQueryRef": "Median of Stocks traded, total value (% of GDP)(current US$)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Facts"
+                        }
+                      },
+                      "Property": "Trade (% of GDP)(current US$)"
+                    }
+                  },
+                  "Function": 6
+                }
+              },
+              "queryRef": "Sum(Facts.Trade (% of GDP)(current US$))",
+              "nativeQueryRef": "Median of Trade (% of GDP)(current US$)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Facts"
+                      }
+                    },
+                    "Property": "Stocks traded, total value (% of GDP)(current US$)"
+                  }
+                },
+                "Function": 6
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

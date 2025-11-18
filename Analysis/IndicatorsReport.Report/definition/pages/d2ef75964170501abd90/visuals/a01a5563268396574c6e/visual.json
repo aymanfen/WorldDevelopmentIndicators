@@ -1,0 +1,159 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "a01a5563268396574c6e",
+  "position": {
+    "x": 151.42857142857144,
+    "y": 314.28571428571428,
+    "z": 3000,
+    "height": 392.85714285714289,
+    "width": 1118.5714285714287,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Facts"
+                    }
+                  },
+                  "Property": "COUNTRYNAME"
+                }
+              },
+              "queryRef": "Facts.COUNTRYNAME",
+              "nativeQueryRef": "COUNTRYNAME",
+              "active": true
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Facts"
+                        }
+                      },
+                      "Property": "GDP per Capita"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Facts.GDP per Capita)",
+              "nativeQueryRef": "Sum of GDP per Capita"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Facts"
+                        }
+                      },
+                      "Property": "Population, total"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Facts.Population, total)",
+              "nativeQueryRef": "Sum of Population, total",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Facts"
+                        }
+                      },
+                      "Property": "GDP (current US$)"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Facts.GDP (current US$))",
+              "nativeQueryRef": "Sum of GDP (current US$)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "logAxisScale": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "logAxisScale": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

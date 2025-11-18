@@ -1,0 +1,209 @@
+table Facts
+	lineageTag: f4567884-1599-4867-897d-ffaa58c0046c
+
+	column Column1
+		dataType: int64
+		formatString: 0
+		lineageTag: 76aec12d-867b-4420-bda6-1c95af1f9fca
+		summarizeBy: sum
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNTRYNAME
+		dataType: string
+		lineageTag: 2bd101e2-1d64-4678-94ca-dd7859ed2058
+		summarizeBy: none
+		sourceColumn: COUNTRYNAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column YEAR
+		dataType: int64
+		formatString: 0
+		lineageTag: 12b2462b-a37c-4d9d-ac76-5d9fa10b7537
+		summarizeBy: sum
+		sourceColumn: YEAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Agriculture, forestry, and fishing, value added (% of GDP)'
+		dataType: double
+		lineageTag: 269cfc10-1d43-452c-9950-fe8fa92a64cf
+		summarizeBy: sum
+		sourceColumn: Agriculture, forestry, and fishing, value added (% of GDP)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'GDP (current US$)'
+		dataType: int64
+		formatString: 0
+		lineageTag: a6b89b77-00b1-414d-91c4-de81eeedebdb
+		summarizeBy: sum
+		sourceColumn: GDP (current US$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Industry (including construction), value added (% of GDP)'
+		dataType: double
+		lineageTag: f3ba3129-fbfe-4279-8848-c65e50d841d7
+		summarizeBy: sum
+		sourceColumn: Industry (including construction), value added (% of GDP)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Inflation, GDP deflator (annual %)'
+		dataType: double
+		lineageTag: aaa995f4-f709-4600-8245-6b651e4a79a6
+		summarizeBy: sum
+		sourceColumn: Inflation, GDP deflator (annual %)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Population, total'
+		dataType: int64
+		formatString: 0
+		lineageTag: fee9cb17-a61c-4322-9466-0da2e3e0d5fc
+		summarizeBy: sum
+		sourceColumn: Population, total
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Services, value added (% of GDP)'
+		dataType: double
+		lineageTag: 52863893-db2f-4803-9de1-b28ed03a95aa
+		summarizeBy: sum
+		sourceColumn: Services, value added (% of GDP)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Stocks traded, total value (% of GDP)'
+		dataType: double
+		lineageTag: 12b9e656-a865-4e88-a513-9ef0b56f9085
+		summarizeBy: sum
+		sourceColumn: Stocks traded, total value (% of GDP)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tax revenue (% of GDP)'
+		dataType: double
+		lineageTag: fb371b93-f695-4246-ad39-c332c8ca81bb
+		summarizeBy: sum
+		sourceColumn: Tax revenue (% of GDP)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Trade (% of GDP)'
+		dataType: double
+		lineageTag: 054fbaae-54fa-49b4-836e-09e5e4bedd9d
+		summarizeBy: sum
+		sourceColumn: Trade (% of GDP)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Agriculture, forestry, and fishing, value added (% of GDP)(current US$)'
+		dataType: double
+		lineageTag: 6bc9acc8-cfee-4b54-96ee-fb7675ff823d
+		summarizeBy: sum
+		sourceColumn: Agriculture, forestry, and fishing, value added (% of GDP)(current US$)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Industry (including construction), value added (% of GDP)(current US$)'
+		dataType: double
+		lineageTag: ee30b573-7b15-4808-b005-51f7fad79234
+		summarizeBy: sum
+		sourceColumn: Industry (including construction), value added (% of GDP)(current US$)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Services, value added (% of GDP)(current US$)'
+		dataType: double
+		lineageTag: d8e2a420-ed8d-416e-a154-5588c7ead798
+		summarizeBy: sum
+		sourceColumn: Services, value added (% of GDP)(current US$)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Stocks traded, total value (% of GDP)(current US$)'
+		dataType: double
+		lineageTag: e5d6ff8f-f96a-4fa3-ad43-01834d9ec175
+		summarizeBy: sum
+		sourceColumn: Stocks traded, total value (% of GDP)(current US$)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tax revenue (% of GDP)(current US$)'
+		dataType: double
+		lineageTag: 87fd67b9-fd2d-4831-a0eb-dfb2c053efac
+		summarizeBy: sum
+		sourceColumn: Tax revenue (% of GDP)(current US$)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Trade (% of GDP)(current US$)'
+		dataType: double
+		lineageTag: 6388a645-bfd4-40ff-a0ee-5ef869756248
+		summarizeBy: sum
+		sourceColumn: Trade (% of GDP)(current US$)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'GDP per Capita'
+		dataType: double
+		lineageTag: 5af7a8e4-619f-4121-8ddf-778d29e07bbf
+		summarizeBy: sum
+		sourceColumn: GDP per Capita
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'GDP Growth'
+		dataType: double
+		lineageTag: 208dc3a7-78ba-4169-a0d0-65c3ba7148ce
+		summarizeBy: sum
+		sourceColumn: GDP Growth
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Facts = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\WorldDevelopmentIndicators\Analysis\Facts.csv"),[Delimiter=",", Columns=20, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"", Int64.Type}, {"COUNTRYNAME", type text}, {"YEAR", Int64.Type}, {"Agriculture, forestry, and fishing, value added (% of GDP)", type number}, {"GDP (current US$)", Int64.Type}, {"Industry (including construction), value added (% of GDP)", type number}, {"Inflation, GDP deflator (annual %)", type number}, {"Population, total", Int64.Type}, {"Services, value added (% of GDP)", type number}, {"Stocks traded, total value (% of GDP)", type number}, {"Tax revenue (% of GDP)", type number}, {"Trade (% of GDP)", type number}, {"Agriculture, forestry, and fishing, value added (% of GDP)(current US$)", type number}, {"Industry (including construction), value added (% of GDP)(current US$)", type number}, {"Services, value added (% of GDP)(current US$)", type number}, {"Stocks traded, total value (% of GDP)(current US$)", type number}, {"Tax revenue (% of GDP)(current US$)", type number}, {"Trade (% of GDP)(current US$)", type number}, {"GDP per Capita", type number}, {"GDP Growth", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

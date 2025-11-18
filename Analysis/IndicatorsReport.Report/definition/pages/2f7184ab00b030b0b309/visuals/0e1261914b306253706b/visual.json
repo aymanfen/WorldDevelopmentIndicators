@@ -1,0 +1,126 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "0e1261914b306253706b",
+  "position": {
+    "x": 712.5,
+    "y": 11.25,
+    "z": 1002,
+    "height": 282.5,
+    "width": 557.5,
+    "tabOrder": 1002
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Facts"
+                    }
+                  },
+                  "Property": "YEAR"
+                }
+              },
+              "queryRef": "Facts.YEAR",
+              "nativeQueryRef": "Sum of YEAR",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Facts"
+                        }
+                      },
+                      "Property": "GDP Growth"
+                    }
+                  },
+                  "Function": 6
+                }
+              },
+              "queryRef": "Sum(Facts.GDP Growth)",
+              "nativeQueryRef": "Median of GDP Growth"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Facts"
+                        }
+                      },
+                      "Property": "Inflation, GDP deflator (annual %)"
+                    }
+                  },
+                  "Function": 6
+                }
+              },
+              "queryRef": "Sum(Facts.Inflation, GDP deflator (annual %))",
+              "nativeQueryRef": "Median of Inflation, GDP deflator (annual %)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Facts"
+                      }
+                    },
+                    "Property": "GDP Growth"
+                  }
+                },
+                "Function": 6
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
